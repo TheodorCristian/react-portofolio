@@ -1,0 +1,43 @@
+.navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  right: 50px;
+  .logo__container {
+    max-width: 60px;
+    a {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .social__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100px;
+    .social__icon {
+      padding-left: 10px;
+      max-width: 30px;
+      a {
+        width: 100%;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .navbar__container {
+    top: 20px;
+    left: 20px;
+    right: 20px;
+  }
+}

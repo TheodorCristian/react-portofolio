@@ -36,7 +36,7 @@
     background: #f6f6f6;
     padding: 50px;
     height: 100vh;
-    .section__two__intreoduction {
+    .section__two__introduction {
       padding: 100px 100px 50px;
       h3 {
         font-size: 40px;
@@ -50,7 +50,7 @@
         top: 50px;
         left: 0;
         display: block;
-        content: '';
+        content: "";
         height: 2px;
         width: 75%;
         background: #1b1e29;
@@ -65,6 +65,14 @@
       padding: 50px;
       flex-wrap: wrap;
     }
+  }
+  .particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
   }
 }
 
@@ -83,6 +91,14 @@
             display: block;
           }
         }
+      }
+    }
+    .homepage__section__two {
+      height: auto;
+      .section__two__introduction {
+      }
+      .project__section__container {
+        padding: 0;
       }
     }
   }

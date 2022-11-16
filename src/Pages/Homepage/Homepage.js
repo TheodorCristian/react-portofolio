@@ -5,6 +5,7 @@ import Footer from "../../Components/Footer/Footer";
 import ProjectTeaser from "../../Components/ProjectTeaser/ProjectTeaser";
 
 const Homepage = () => {
+
   return (
     <div className="homepage__container">
       <div className="homepage__section__one">
@@ -20,7 +21,7 @@ const Homepage = () => {
         </div>
       </div>
       <div className="homepage__section__two">
-        <div className="section__two__intreoduction">
+        <div className="section__two__introduction">
           <h3 className="left">Projects</h3>
         </div>
         <div className="project__section__container">

@@ -35,11 +35,19 @@
       margin-bottom: 50px;
       .project__page__description {
         margin-right: 25px;
-        width: 33%;
+        width: 50%;
+        p {
+          width: 75%;
+          margin: 0 auto;
+          line-height: 30px;
+          font-size: 23px;
+        }
       }
       .project__page__demo {
         margin-left: 25px;
-        width: 67%;
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
       }
       .project__page__technologies {
         width: 100%;

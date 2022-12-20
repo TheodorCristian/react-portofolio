@@ -52,23 +52,13 @@ const Project = () => {
       <div className="project__page__content">
         <div className="row">
           <div className="project__page__description">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
-            </p>
+            <p>{project.project_description}</p>
           </div>
           <div className="project__page__demo">
-            <Player playsInline src={project.project_demo} autoPlay>
-              <BigPlayButton position="center" />
-            </Player>
+            <img
+              src={project.project_demo}
+              alt={`${project.project_name} demo`}
+            />
           </div>
         </div>
         <div className="row tehnology__row">

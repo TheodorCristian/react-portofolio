@@ -35,15 +35,16 @@
   .homepage__section__two {
     background: #f6f6f6;
     padding: 50px;
-    height: 100vh;
+    min-height: 100vh;
     .section__two__introduction {
-      padding: 100px 100px 50px;
+      padding: 100px 80px 50px;
+      display: flex;
+      justify-content: flex-start;
       h3 {
         font-size: 40px;
         line-height: 42px;
         position: relative;
         color: #1b1e29;
-        max-width: 400px;
       }
       h3.left::after {
         position: absolute;
@@ -52,16 +53,15 @@
         display: block;
         content: "";
         height: 2px;
-        width: 75%;
+        width: 150%;
+        min-width: 300px;
         background: #1b1e29;
       }
     }
     .project__section__container {
-      max-width: 1080px;
-      width: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
       padding: 50px;
       flex-wrap: wrap;
     }
@@ -75,7 +75,11 @@
     z-index: -1;
   }
 }
-
+@media screen and (max-width: 1024px) {
+  .homepage__section__two {
+    height: auto;
+  }
+}
 @media screen and (max-width: 720px) {
   .homepage__container {
     .homepage__section__one {
@@ -94,7 +98,6 @@
       }
     }
     .homepage__section__two {
-      height: auto;
       .section__two__introduction {
       }
       .project__section__container {

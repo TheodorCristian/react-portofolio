@@ -1,0 +1,128 @@
+.project__page__container {
+  background: #f6f6f6;
+  padding: 50px;
+  .project__page__introduction {
+    padding: 100px 100px 50px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    h3 {
+      font-size: 40px;
+      line-height: 42px;
+      position: relative;
+      color: #1b1e29;
+    }
+    h3.right::after {
+      position: absolute;
+      top: 50px;
+      right: 0;
+      display: block;
+      content: "";
+      height: 2px;
+      width: 150%;
+      min-width: 300px;
+      background: #1b1e29;
+    }
+  }
+  .project__page__content {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      .project__page__description {
+        margin-right: 25px;
+        width: 33%;
+      }
+      .project__page__demo {
+        margin-left: 25px;
+        width: 67%;
+      }
+      .project__page__technologies {
+        width: 100%;
+        margin: 50px auto;
+        max-width: 1024px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .technology__container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          .technology__image {
+            max-width: 30px;
+            width: 100%;
+            height: auto;
+          }
+          .technology__name {
+            margin-left: 20px;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 500;
+            color: #f6f6f6;
+          }
+        }
+      }
+      .project__page__images {
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .tehnology__row {
+      background: #1b1e29;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .project__page__container {
+    .project__page__content {
+      .row {
+        flex-direction: column;
+        .project__page__description {
+          width: 100%;
+          margin: 0;
+          margin-bottom: 50px;
+        }
+        .project__page__demo {
+          width: 100%;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .project__page__container {
+    padding: 30px;
+    .project__page__content {
+      padding: 0;
+      .row {
+        margin-bottom: 30px;
+        .project__page__description {
+          margin-bottom: 30px;
+        }
+        .project__page__technologies {
+          margin: 0;
+          .technology__container {
+            padding: 10px;
+            .technology__name{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

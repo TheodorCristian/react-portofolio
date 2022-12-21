@@ -98,17 +98,17 @@
       }
     }
     .homepage__section__two {
+      padding: 30px;
       .section__two__introduction {
-        padding: 30px;
         text-align: center;
         justify-content: center;
+        padding: 50px 30px 30px;
         h3 {
           font-size: 30px;
         }
         h3.left::after {
-          min-width: none;
-          width: 100%;
-          left: 25%;
+          min-width: 0;
+          left: -25%;
         }
       }
       .project__section__container {
